@@ -20,7 +20,7 @@
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
     <br>
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <label for="psw-repeat"><b>Confirm Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
     <hr>
     <br>
@@ -33,5 +33,5 @@
 
    <h1> Thankyou, Happy Learning </h1>
    <h1>Build Amazing Carrer With Devops <h1>
-   <b> I appreciate</b>
+   <b> AJITH KUMAR M</b>
 </form>
