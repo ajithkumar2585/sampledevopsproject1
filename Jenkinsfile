@@ -4,7 +4,7 @@ pipeline {
     environment {
         // Set environment variables
         MAVEN_HOME = "/opt/apache-maven-3.8.8"  // Adjust the path to where Maven is installed
-        TOMCAT_SERVER_URL = "http://10.79.23.202:9090"  // Tomcat Manager URL
+        TOMCAT_SERVER_URL = "http://10.79.23.202:9090/manager/text"  // Tomcat Manager URL
         TOMCAT_USER = "tomcat"  // Tomcat username
         TOMCAT_PASSWORD = "Password"  // Tomcat password
     }
@@ -33,7 +33,7 @@ pipeline {
                     sh """
                     curl --upload-file ${warFile} \
                          --user ${TOMCAT_USER}:${TOMCAT_PASSWORD} \
-                         ${TOMCAT_SERVER_URL}/manager/text/deploy?path=/webapp&update=true
+                         ${TOMCAT_SERVER_URL}/deploy?path=/webapp&update=true
                     """
                 }
             }
