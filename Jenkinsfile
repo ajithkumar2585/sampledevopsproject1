@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
                     // Deploy the WAR file to Tomcat using curl
-                    def warFile = "target/webapp.war"  // Path to the WAR file
+                    def warFile = "/var/lib/jenkins/workspace/Newpipelnetomcat/webapp/target/webapp.war"  // Path to the WAR file
                     
                     sh """
                     curl --upload-file ${warFile} \
